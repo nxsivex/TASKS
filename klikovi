@@ -1,0 +1,18 @@
+<!DOCTYPE html> 
+<html>
+<head>
+    <title>Broenje na klikovi</title>
+</head>
+
+<body>
+    <script type="text/javascript">
+    var klikovi = 0;
+    function klik() {
+        klikovi += 1;
+        document.getElementById("klikovi").innerHTML = klikovi;
+    };
+    </script>
+    <button type="button" onClick="klik()">KLIKNI</button>
+    <p>Imate kliknato: <a id="klikovi">0</a> pati</p>
+
+</body></html>
