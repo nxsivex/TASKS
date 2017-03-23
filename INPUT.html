@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html>
+<head>
+<title>INPUT POLE</title>
+</head>
+
+<body>
+<script type="text/javascript">
+
+function VnesenTekst(e){
+console.log(document.getElementById("imen").value);
+}
+
+var lista=[];
+function ListaPecati(){
+	lista.push(document.getElementById("imen").value);
+	    console.log(lista);
+		izbrisiPrikazi();
+}
+function izbrisiPrikazi(){
+	document.getElementById("imen").value="";
+	
+	
+}
+</script>
+
+IME: <input id="imen" type="text" name="Ime" placeholder="Vnesi ime" onChange="VnesenTekst(event)"><br>
+<button type="button" onClick="ListaPecati()">Vnesi input vo lista</button>
+
+</body>
+</html>
