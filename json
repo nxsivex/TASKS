@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html>
+<body>
+<p id="demo"></p>
+
+<script>
+
+var mojObj, x, y;
+mojObj = {"ime":"Daniel", 
+"godini":20,
+ "adresa":"IVANJEVCI",
+ "zavSkolo":{
+ 	"osnovno":"OU KOCO RACIN-IV",
+ 	"sredno":"SOTU GJORGI NAUMOV"
+ },
+ "veshtini":["Jak na raka", "Kivam so zatvoreni oci", "Itn"]
+
+};
+x = mojObj.ime;
+document.getElementById("demo").innerHTML = x;
+document.getElementById("demo").innerHTML+=mojObj.skolo.sredno + "/br";
+y=mojObj.veshtini[0];
+document.getElementById("demo").innerHTML+=y;
+
+</script>
+
+</body>
+</html>
